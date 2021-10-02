@@ -1,22 +1,21 @@
 /* show & Hidden Function -start*/
-
-    const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
     
-    /*show - validando se a constante existe*/
-    if(navToggle) {
-        navToggle.addEventListener('click', ()=>{
+/*show - validando se a constante existe*/
+if(navToggle) {
+    navToggle.addEventListener('click', ()=>{
             navMenu.classList.add('show-menu')
-        })
-    }
+    })
+}
     
-    /*hidden - validanto se a constante existe*/
-    if(navClose) {
-        navClose.addEventListener('click', ()=>{
-            navMenu.classList.remove('show-menu')
-        })
-    }
+/*hidden - validanto se a constante existe*/
+if(navClose) {
+    navClose.addEventListener('click', ()=>{
+        navMenu.classList.remove('show-menu')
+    })
+}
 /* show & Hidden Function -end*/
 
 /*Remove Menu Mobile*/

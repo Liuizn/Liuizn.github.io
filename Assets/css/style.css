@@ -127,10 +127,24 @@ img{max-width: 100%; height: auto;}
     align-items: center;
 }
 
-.nav__logo, .nav__toggle {color: var(--title-color); font-weight: var(--font-medium);}
-.nav__logo:hover {color: var(--first-color);}
-.nav__toggle {font-size: 1.1rem;cursor: pointer;}
-.nav__toggle:hover{color: var(--first-color);}
+.nav__logo,
+ .nav__toggle {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+}
+ 
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color);
+}
 
 @media screen and (max-width: 767px) {
     .nav__menu {
@@ -149,7 +163,6 @@ img{max-width: 100%; height: auto;}
 .nav__list {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-
 }
 
 .nav__link {
@@ -161,19 +174,25 @@ img{max-width: 100%; height: auto;}
     font-weight: var(--font-medium);
 }
 
-.nav__link:hover { color: var(--first-color);}
+.nav__link:hover{ 
+    color: var(--first-color);
+}
 
-.nav__icon { font-size: 1.2rem;}
+.nav__icon{
+    font-size: 1.2rem;
+}
 
 .nav__close {
     position: absolute;
     right: 1.3rem;
-    bottom:.5rem;
+    bottom: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color);
 }
-.nav__close:hover{color: var(--first-color-alt);}
+.nav__close:hover{
+    color: var(--first-color-alt);
+}
 /* end- nav */
 
 /* start- show menu */
@@ -181,3 +200,41 @@ img{max-width: 100%; height: auto;}
     bottom: 0;
 }
 /* end- show menu */
+
+/* start- home */
+.home__container{
+    gap: 1rem;
+}
+
+.home__content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home__social-icon:hover{
+    color: var(--first-color-alt);
+} 
+
+.home__blob{
+    width: 200px;
+    fill: var(--first-color);
+}
+
+.home__blob-img{
+    width: 170px;
+}
+
+
+/* end- home */
