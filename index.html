@@ -81,19 +81,20 @@
                     </div>
 
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
                             <g mask="url(#mask0)">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image href="/Assets/img/home.png" x='-10'  y='0' class="home__blob-img"/>
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image href="/Assets/img/home.png" x='-10' y='0' class="home__blob-img" />
                             </g>
                         </svg>
                     </div>
@@ -104,7 +105,7 @@
                         <p class="home__description">Estudante na área de Desenvolvimento. Atualmente focado em PHP &
                             SQL. cursando técnico em Informática para Internet no SENAI.</p>
                         <a href="#contact" class="button button--flex\">
-                            Contate me <i class="uil uil-message button_icon"></i>
+                            Contate me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -120,22 +121,133 @@
         </section>
 
         <!--start- sobre -->
-         <section class="about section" id="about">
-             <h2 class="section__title">Sobre Mim</h2>
-             <span class="section__subtitle">Introdução</span>
-             <div class="about__container container grid">
-                    <img src="Assets/img/about.jpeg" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">Meu nome é Luiz Gabriel dos Santos Nogueira. Nasci no dia 30 de dezembro de 2002, em Belo Horizonte, Minas Gerais. Em busca da minha primeira oportunidade de trabalho.</p>
-                    </div>
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre Mim</h2>
+
+            <span class="section__subtitle">Introdução</span>
+
+            <div class="about__container container grid">
+                <img src="Assets/img/about.jpeg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Meu nome é Luiz Gabriel dos Santos Nogueira. Nasci no dia 30 de
+                        dezembro de 2002, em Belo Horizonte, Minas Gerais. Em busca da minha primeira oportunidade de
+                        trabalho no ramo da Programação.</p>
+                    <p class="about__description">
+                        Sempre proativo, mantenho meu foco e minha dedicação para adquirir conhecimento e práticar ao
+                        máximo tudo que for absorvido. Tenho repositórios de estudos e de projetos utilizando
+                        <b>HTML</b>,
+                        <b>CSS</b> , <b>JS</b>, <b>Bootstrap</b>, <b>PHP</b>, <b>MySQL</b> e <b>.NET</b> .
+                    </p>
+                </div>
+
+                <div class="about__buttons">
+                    <a download="" href="Assets/pdf/LuizG_CV.pdf" class="button button--flex">
+                        Download Currículo <i class="uitl uil-download-alt button__icon"></i>
+                    </a>
+                </div>
             </div>
-            <div class="about__buttons">
-                <a download="" href="Assets/pdf/LuizG_CV.pdf" class="button button--flex">
-                    
-                </a>
-            </div>
-         </section>
+        </section>
         <!--end- sobre -->
+
+        <!-- start- stack -->
+        <section class="section stack" id="stack">
+            <h2 class="section__title">Stack</h2>
+            <span class="section__subtitle">Tecnologias que tenho adquirido conhecimento</span>
+
+            <div class="grid container stack__container">
+                <!--start- Front-End -->
+                <div class="stack__content stack__open">
+                    <div class="stack__header">
+                        <i class="uil uil-brackets-curly stack__icon"></i>
+                        <div>
+                            <h1 class="stack__title">Front-End</h1>
+                        </div>
+                        <i class="uil uil-angle-down stack__arrow"></i>
+                    </div>
+                    <div class="stack__list grid">
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">HTML</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__html"></span>
+                            </div>
+                        </div>
+
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">CSS</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__css"></span>
+                            </div>
+                        </div>
+
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">JavaScript</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__js"></span>
+                            </div>
+                        </div>
+
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">Bootstrap</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__bt"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end- Front-End -->
+                <!-- start- Back-End -->
+                <div class="stack__content stack__close">
+                    <div class="stack__header">
+                        <i class="uil uil-server-network stack__icon"></i>
+                        <div>
+                            <h1 class="stack__title">Back-End</h1>
+                        </div>
+                        <i class="uil uil-angle-down stack__arrow"></i>
+                    </div>
+
+                    <div class="stack__list grid">
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">PHP</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage__php"></span>
+                            </div>
+                        </div>
+
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">SQL</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__SQL"></span>
+                            </div>
+                        </div>
+
+                        <div class="stack__data">
+                            <div class="stack__tittles">
+                                <h3 class="stack__name">C#</h3>
+                            </div>
+                            <div class="stack__bar">
+                                <span class="stack__percentage stack__c#"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end- Back-End -->
+            </div>
+
+        </section>
+        <!-- end- stack -->
     </main>
 
 
