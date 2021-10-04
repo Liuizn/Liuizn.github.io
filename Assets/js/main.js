@@ -54,7 +54,7 @@ stackHeader.forEach((el) => {
 /*end -acordeão stack*/
 
 /* Portfólio function*/
-let swiper = new Swiper(".portfolio__container", {
+let swiper = new Swiper(".mySwiper", {
     cssMode: true,
     loop: true,
 
@@ -64,6 +64,6 @@ let swiper = new Swiper(".portfolio__container", {
     },
     pagination: {
         el: ".swiper-pagination",
-        clickabe: true,
+        clickable: true,
     },
 });
