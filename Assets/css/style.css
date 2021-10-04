@@ -4,10 +4,8 @@
 /* variables */
 :root {
     --header-height: 3rem;
-
     /* start- Colors */
     --hue-color: 0;
-
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second:hsl(var(--hue-color), 69%, 61%);
     --first-color-alt:hsl(var(--hue-color), 57%, 53%);
@@ -22,7 +20,6 @@
 
     /* start- Font & Typography */
     --body-font:'Poppins', sans-serif;
-
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -30,13 +27,10 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
-    
     /* Font-Weight */
     --font-medium: 500;
     --font-semi-bold: 600; 
-    
     /* END- Font & Typography */
-
     /* Margenes Bottom */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -46,13 +40,11 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-
     /* z-index */
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
-
 /* Media-queries */
 @media screen and (min-width: 968px) {
         :root{
@@ -233,7 +225,7 @@ img{max-width: 100%; height: auto;}
 }
 
 .home__blob-img{
-    width: 300px;
+    width: 250px;
 }
 
 .home__data{
@@ -256,7 +248,7 @@ img{max-width: 100%; height: auto;}
 }
 
 .home__scroll{
-    /* display: none; */
+     display: none; 
 }
 
 .home__scroll-button{
@@ -285,10 +277,29 @@ img{max-width: 100%; height: auto;}
 /* end- home */
 
 /* start- buttons */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color:#FFFFFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
 
+}
 
+.button:hover{
+    background-color: var(--first-color-alt);
+}
 
+.button_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-25);
+    transition: .3s;
+}
 
-
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
 
 /* end- buttons */
