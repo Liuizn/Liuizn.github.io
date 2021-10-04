@@ -41,14 +41,29 @@ function toggleStacks() {
         stackContent[i].className = 'stack__content stack__close'
     }
 
-    if(itemClass === 'stack__content stack__close'){
+    if (itemClass === 'stack__content stack__close') {
         this.parentNode.className = 'stack__content stack__open'
     }
 }
 
-stackHeader.forEach((el) =>{
+stackHeader.forEach((el) => {
     el.addEventListener('click', toggleStacks)
 })
 
 
 /*end -acordeão stack*/
+
+/* Portfólio function*/
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickabe: true,
+    },
+});
