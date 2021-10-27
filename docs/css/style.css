@@ -609,7 +609,7 @@ img {
 .footer__copy {
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: #000000;
+    color: var(--title-color);
     margin-top: var(--mb-3);
 }
 
