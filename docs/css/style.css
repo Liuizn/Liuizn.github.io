@@ -5,7 +5,7 @@
 :root {
     --header-height: 3rem;
     /* start- Colors */
-    --hue-color: 0;
+    --hue-color: 246;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -326,6 +326,11 @@ img {
 
 .home__description {
     margin-bottom: var(--mb-2);
+}
+
+.home__color-anchor {
+
+    color: var(--first-color);
 }
 
 .home__scroll {
