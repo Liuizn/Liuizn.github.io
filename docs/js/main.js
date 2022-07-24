@@ -1,7 +1,33 @@
 /* show & Hidden Function -start*/
-const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
+const rgbButton = document.getElementById('rbg-button');
+
+// document.documentElement.style.getPropertyValue('--hue-color')
+const defaultValueColor = 120;
+
+let primaryColor = 1;
+
+rgbButton.addEventListener('click', toggleRGBMode)
+
+let activeRGB = setInterval(loopRGB, 20);
+
+function toggleRGBMode() {
+    if (rgbButton.classList.contains('on')) {
+        clearInterval(activeRGB);
+        rgbButton.classList.remove('on');
+    } else {
+        activeRGB = setInterval(loopRGB, 20);
+        rgbButton.classList.add('on');
+    }
+};
+
+function loopRGB() {
+    document.documentElement.style.setProperty('--hue-color', primaryColor.toString());
+    primaryColor = +primaryColor + 1;
+}
+
 
 /*show - validando se a constante existe*/
 if (navToggle) {
@@ -27,29 +53,6 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-
-/*start -acordeão stack*/
-const stackContent = document.getElementsByClassName('stack__content')
-const stackHeader = document.querySelectorAll('.stack__header')
-
-function toggleStacks() {
-    let itemClass = this.parentNode.className
-
-    for (let i = 0; i < stackContent.length; i++) {
-        stackContent[i].className = 'stack__content stack__close'
-    }
-
-    if (itemClass === 'stack__content stack__close') {
-        this.parentNode.className = 'stack__content stack__open'
-    }
-}
-
-stackHeader.forEach((el) => {
-    el.addEventListener('click', toggleStacks)
-})
-
 
 /*end -acordeão stack*/
 
