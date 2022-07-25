@@ -25,7 +25,8 @@ function toggleRGBMode() {
 
 function loopRGB() {
     document.documentElement.style.setProperty('--hue-color', primaryColor.toString());
-    primaryColor = +primaryColor + 1;
+
+    primaryColor = +primaryColor == 360 ? primaryColor = 1 : primaryColor = +primaryColor + 1;
 }
 
 
@@ -60,6 +61,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 let swiper = new Swiper(".mySwiper", {
     cssMode: true,
     loop: true,
+
+    keyboard: {
+        enabled: true
+    },
 
     navigation: {
         nextEl: ".swiper-button-next",

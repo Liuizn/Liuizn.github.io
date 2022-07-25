@@ -1,22 +1,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-@keyframes transition-color {
-    from {
-        --hue-color : 0
-    }
-
-    to {
-        --hue-color: 300
-    }
-}
-
-
 /* variables */
 :root {
     --header-height: 3rem;
-    /* start- Colors */
+    /* Colors */
     --hue-color: 120;
     --first-color: hsl(var(--hue-color), 89%, 61%);
     --first-color-second: hsl(var(--hue-color), 89%, 61%);
@@ -30,10 +18,7 @@
     --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
-    /* end- Colors */
-
-    /* start- Font & Typography */
+    /* Font & Typography */
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -45,8 +30,7 @@
     /* Font-Weight */
     --font-medium: 500;
     --font-semi-bold: 600;
-    /* END- Font & Typography */
-    /* Margenes Bottom */
+    /* Margens */
     --m-0-25: .25rem;
     --m-0-5: .5rem;
     --m-0-75: .75rem;
@@ -76,7 +60,7 @@
 
 /* var-darkmode */
 body.dark-theme {
-    /* start- Colors */
+    /* Colors */
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -85,14 +69,12 @@ body.dark-theme {
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36 %);
-
-    /* end- Colors */
 }
 
 /* dark-light mode */
 .nav__btns {
     display: flex;
-    
+
     align-items: center;
 }
 
@@ -107,8 +89,7 @@ body.dark-theme {
     color: var(--first-color);
 }
 
-
-/* start- base */
+/* base */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -148,9 +129,7 @@ img {
     height: auto;
 }
 
-/* end- base */
-
-/* start- code-reusable */
+/* code-reusable */
 .section {
     padding: 2rem 0 4rem;
 }
@@ -170,9 +149,7 @@ img {
     text-align: center;
 }
 
-/* end- code-reusable */
-
-/* start- layout */
+/* layout */
 .container {
     max-width: 768px;
     margin-left: var(--m-1-5);
@@ -193,8 +170,7 @@ img {
     background-color: var(--body-color);
 }
 
-/* end- layout */
-/* start- nav */
+/* nav */
 .nav {
     max-width: 968px;
     height: var(--header-height);
@@ -271,9 +247,8 @@ img {
     color: var(--first-color-alt);
 }
 
-/* end- nav */
 
-/* start- show menu */
+/* show menu */
 .show-menu {
     bottom: 0;
 }
@@ -287,7 +262,7 @@ img {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
-/* start- home */
+/* home */
 .home__container {
     gap: 1rem;
 }
@@ -374,9 +349,7 @@ img {
     font-size: 1.25rem;
 }
 
-/* end- home */
-
-/* start- buttons */
+/* buttons */
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -402,8 +375,7 @@ img {
     align-items: center;
 }
 
-/* end- buttons */
-/* start- about */
+/* about */
 .about__img {
     width: 200px;
     border-radius: .6rem;
@@ -412,7 +384,7 @@ img {
 }
 
 .about__description {
-    text-align: center;
+
     margin-bottom: var(--m-2)
 }
 
@@ -420,19 +392,30 @@ img {
     text-align: center;
 }
 
-/* end- about */
-/* start- stack */
+/* stack */
 .stack__container {
-    row-gap: 0;
+    row-gap: var(--m-1-5);
 }
 
 .stack__content {
     border-width: 2px;
     border-style: solid;
-    border-image:
-        linear-gradient(var(--first-color-alt),
-            rgba(255, 255, 255, 0.1)) 1;
 }
+
+.up {
+    border-image:
+    linear-gradient(var(--first-color-alt),
+        rgba(255, 255, 255, 0.1)) 1;
+}
+
+.down {
+    border-image:
+    linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        var(--first-color-alt)
+        ) 1;
+}
+
 
 .stack__header {
     display: flex;
@@ -486,6 +469,7 @@ img {
     border-radius: .25rem;
 }
 
+
 .stack__bar {
     background-color: var(--first-color);
 }
@@ -504,8 +488,7 @@ img {
     transform: rotate(-180deg);
 }
 
-/* end- stack */
-/* start- portfolio */
+/* portfolio */
 .portfolio__container {
     overflow: initial;
 }
@@ -565,8 +548,7 @@ img {
     outline: none;
 }
 
-/* end- portfolio */
-/* start- contate-me */
+/* contate-me */
 .contact__container {
     row-gap: 3rem;
 }
@@ -592,8 +574,7 @@ img {
     color: var(--text-color-light);
 }
 
-/* end- contate-me */
-/* start- footer */
+/* footer */
 .footer {
     padding-top: 2rem;
 }
@@ -649,8 +630,6 @@ img {
     color: #FFFFFF;
 }
 
-/* end- footer */
-
 .scrollup {
     position: fixed;
     right: 1rem;
@@ -696,7 +675,7 @@ img {
 
 /* Media-Queries */
 /*----small-devices---- */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 567px) {
     .container {
         margin-left: var(--m-1);
         margin-right: var(--m-1);
@@ -720,6 +699,24 @@ img {
 
     .stack__title {
         font-size: var(--normal-font-size);
+    }
+
+    .up {
+        border-image:
+        linear-gradient(
+            to right,
+            var(--first-color-alt),
+            rgba(255, 255, 255, 0.1)
+            ) 1;
+    }
+    
+    .down {
+        border-image:
+        linear-gradient(
+            to right,
+            var(--first-color-alt),
+            rgba(255, 255, 255, 0.1)
+            ) 1;
     }
 }
 
@@ -745,6 +742,7 @@ img {
     .footer__container {
         grid-template-columns: repeat(2, 1fr)
     }
+  
 }
 
 @media screen and (min-width: 768px) {
