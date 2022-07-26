@@ -5,8 +5,6 @@ const navClose = document.getElementById('nav-close');
 const rgbButton = document.getElementById('rbg-button');
 
 // document.documentElement.style.getPropertyValue('--hue-color')
-const defaultValueColor = 120;
-
 let primaryColor = 1;
 
 rgbButton.addEventListener('click', toggleRGBMode)
